@@ -6,9 +6,10 @@ namespace Armour
     {
         private static void Main(string[] args)
         {
-            RSAUtils rsa = new RSAUtils();
-            string en =  rsa.RSAEncrypt(rsa.GenerateRSASecretKey(256).PublicKey, "我的咪咪");
-            Console.WriteLine(rsa.RSADecrypt(rsa.GenerateRSASecretKey(256).PrivateKey, en));
+            RSAUtils rsaUtils = new RSAUtils();
+            RSAUtils.RSASecretKey rsaKey = rsaUtils.GenerateRSASecretKey(1024);
+            string en = rsaUtils.RSAEncrypt(rsaKey.PublicKey, "我的咪咪");
+            Console.WriteLine(rsaUtils.RSADecrypt(rsaKey.PrivateKey, en));
             Console.ReadKey();
         }
     }

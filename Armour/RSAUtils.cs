@@ -29,9 +29,8 @@ namespace Armour
             RSASecretKey rsaKey = new RSASecretKey();
 
             using (RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(keySize))
-
             {
-                rsaKey.PrivateKey = rsa.ToXmlString(true);
+                rsaKey.PrivateKey = rsa.ToXmlString(false);
 
                 rsaKey.PublicKey = rsa.ToXmlString(false);
             }
