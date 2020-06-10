@@ -59,8 +59,9 @@ namespace Armour
 
             {
                 rsa.FromXmlString(xmlPrivateKey);
+                byte[] t = Convert.FromBase64String(content);
 
-                byte[] decryptedData = rsa.Decrypt(Convert.FromBase64String(content), false);
+                byte[] decryptedData = rsa.Decrypt(t, false);
 
                 decryptedContent = Encoding.GetEncoding("gb2312").GetString(decryptedData);
             }
