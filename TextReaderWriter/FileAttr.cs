@@ -5,7 +5,7 @@ namespace TextReaderWriter
 {
     internal class FileAttr
     {
-        //
+        //1
         public void SetAttrByFile(string filePath)
         {
             Console.WriteLine(File.GetAttributes(filePath));
