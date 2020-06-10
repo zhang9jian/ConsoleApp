@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextReaderWriter", "TextReaderWriter\TextReaderWriter.csproj", "{EA3668B2-B1C1-43C7-9263-1B5E4B3B85E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Armour", "Armour\Armour.csproj", "{E7C05717-1453-4487-89F8-FDBCBBE13301}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{EA3668B2-B1C1-43C7-9263-1B5E4B3B85E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA3668B2-B1C1-43C7-9263-1B5E4B3B85E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA3668B2-B1C1-43C7-9263-1B5E4B3B85E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7C05717-1453-4487-89F8-FDBCBBE13301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C05717-1453-4487-89F8-FDBCBBE13301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C05717-1453-4487-89F8-FDBCBBE13301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C05717-1453-4487-89F8-FDBCBBE13301}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
