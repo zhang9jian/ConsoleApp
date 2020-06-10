@@ -5,7 +5,7 @@ namespace TextReaderWriter
 {
     internal class FileAttr
     {
-        //设置文件隐藏和只读属性
+        //
         public void SetAttrByFile(string filePath)
         {
             Console.WriteLine(File.GetAttributes(filePath));
