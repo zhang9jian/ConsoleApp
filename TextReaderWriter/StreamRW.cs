@@ -60,10 +60,10 @@ namespace TextReaderWriter
 
             System.Console.WriteLine("Contents of WriteText.txt = {0}", text);
 
-            return text;            
+            return text;
         }
 
-        public static string[]  readAllLines(string filePath)
+        public static string[] readAllLines(string filePath)
         {
             string[] text = System.IO.File.ReadAllLines(filePath);
 
@@ -72,14 +72,14 @@ namespace TextReaderWriter
             return text;
         }
 
-        public static void writeAllText(string filePath,string contents)
+        public static void writeAllText(string filePath, string contents)
         {
-            File.WriteAllText(filePath, contents);           
+            File.WriteAllText(filePath, contents);
         }
 
-        public static void writeAllLines(string filePath,string[] contents)
+        public static void writeAllLines(string filePath, string[] contents)
         {
-            File.WriteAllLines(filePath,contents);
+            File.WriteAllLines(filePath, contents);
         }
     }
 }
