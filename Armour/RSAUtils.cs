@@ -6,7 +6,7 @@ namespace Armour
 {
     internal class RSAUtils
     {
-        private struct RSASecretKey
+        public struct RSASecretKey
         {
             public RSASecretKey(string privateKey, string publicKey)
             {
@@ -19,12 +19,11 @@ namespace Armour
 
             public override string ToString()
             {
-                return string.Format(
-                    "PrivateKey: {0}\r\nPublicKey: {1}", PrivateKey, PublicKey);
+                return string.Format("PrivateKey: {0} PublicKey: {1}", PrivateKey, PublicKey);
             }
         }
 
-        private RSASecretKey GenerateRSASecretKey(int keySize)
+        public RSASecretKey GenerateRSASecretKey(int keySize)
 
         {
             RSASecretKey rsaKey = new RSASecretKey();
@@ -40,7 +39,7 @@ namespace Armour
             return rsaKey;
         }
 
-        private string RSAEncrypt(string xmlPublicKey, string content)
+        public string RSAEncrypt(string xmlPublicKey, string content)
         {
             string encryptedContent = string.Empty;
             using (RSACryptoServiceProvider rsa = new RSACryptoServiceProvider())
@@ -52,7 +51,7 @@ namespace Armour
             return encryptedContent;
         }
 
-        private string RSADecrypt(string xmlPrivateKey, string content)
+        public string RSADecrypt(string xmlPrivateKey, string content)
 
         {
             string decryptedContent = string.Empty;
