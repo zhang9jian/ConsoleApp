@@ -13,7 +13,7 @@ namespace Armour
         }
 
         public static void rsaByGenKey(int size, string content)
-        {
+        {//
             RSASecretKey key = RSAUtils.GenerateRSASecretKey(size);
             string en = RSAUtils.RSAEncrypt(key.PublicKey, content);
             string de = RSAUtils.RSADecrypt(key.PrivateKey, en);
