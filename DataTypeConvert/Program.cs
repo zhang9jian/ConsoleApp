@@ -10,6 +10,7 @@ namespace DataTypeConvert
     {
         private static void Main(string[] args)
         {
+            //
         }
     }
 }
