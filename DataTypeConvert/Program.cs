@@ -10,7 +10,12 @@ namespace DataTypeConvert
     {
         private static void Main(string[] args)
         {
-            //分支
+            char i = '1';
+            string str = "2";
+            Console.WriteLine((int)i);
+            Console.WriteLine(int.Parse(str));
+            Console.WriteLine(Convert.ToInt32(str));
+            Console.ReadKey();
         }
     }
 }
