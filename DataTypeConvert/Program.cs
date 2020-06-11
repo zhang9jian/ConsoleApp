@@ -15,7 +15,7 @@ namespace DataTypeConvert
             Console.WriteLine((int)i);
             Console.WriteLine(int.Parse(str));
             Console.WriteLine(Convert.ToInt32(str));
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }
