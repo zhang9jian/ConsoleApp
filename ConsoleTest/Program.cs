@@ -1,4 +1,6 @@
-﻿namespace ConsoleTest
+﻿using System.Net;
+
+namespace ConsoleTest
 {
     internal class Program
     {
