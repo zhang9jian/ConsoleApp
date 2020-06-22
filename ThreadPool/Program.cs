@@ -6,12 +6,14 @@ namespace SimpleThreadPool
     {
         private static void Main(string[] args)
         {
-            ThreadQ tq = new ThreadQ();
+            /*ThreadQ tq = new ThreadQ();
             tq.execute();
             Console.ReadKey();
-
-            /*ThreadWaitForSingleObj.execute();
-            Console.ReadKey();*/
+            */
+            //TaskDemo.taskDemo();
+            MultiTask.LimitThreadCount();
+            /*ThreadWaitForSingleObj.execute();*/
+            Console.ReadKey();
         }
     }
 }

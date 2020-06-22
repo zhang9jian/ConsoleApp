@@ -4,8 +4,8 @@
     {
         private static void Main(string[] args)
         {
-            // DelegateAsyncResult.execute();
-            DelegateAsyncCallback.execute();
+            DelegateAsyncResult.execute();
+            // DelegateAsyncCallback.execute();
         }
     }
 }

@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate", "Delegate\Delega
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogBuilder", "LogBuilder\LogBuilder.csproj", "{881A4A5D-ED18-4F11-A4D0-77A53BA7AFEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPool", "ThreadPool\ThreadPool.csproj", "{E218EE6A-94F2-4CB1-B541-6A9A022EAAE9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleThreadPool", "ThreadPool\SimpleThreadPool.csproj", "{E218EE6A-94F2-4CB1-B541-6A9A022EAAE9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlParser", "XmlParser\XmlParser.csproj", "{46760662-30B4-4D85-B833-68A5C09B881B}"
 EndProject
