@@ -13,7 +13,7 @@ namespace SimpleThreadPool
             //TaskDemo.taskDemo();
             MultiTask.LimitThreadCount();
             /*ThreadWaitForSingleObj.execute();*/
-            Console.ReadKey();
+            Console.ReadKey()；
         }
     }
 }
