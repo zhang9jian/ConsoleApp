@@ -11,6 +11,34 @@ namespace DataStruct
     {
         private static void Main(string[] args)
         {
+            Person p = new Person();
+            p.Name = "a";
+            Console.WriteLine(p.Name);
+            Console.ReadKey();
+        }
+    }
+
+    internal class Person
+    {
+        public string Name //相当于public string Name；对取值和设置没有限制，但还是使用了属性
+        {
+            get;
+            set;
+        }
+
+        public string Address //使用属性对字段进行封装，使用value内置值进行判断并赋值
+        {
+            get { return address; }
+            set { if (value.Length < 10) { address = value; } }
+        }
+
+        private string address;
+    }
+
+    internal class DataType
+    {
+        public void execute()
+        {
             Console.WriteLine("**************以下是连续分配内存******************");
 
             int[] numbers = new int[5];//一维数组
