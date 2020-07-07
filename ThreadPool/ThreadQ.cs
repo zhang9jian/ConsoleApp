@@ -16,12 +16,15 @@ namespace SimpleThreadPool
 
     public class ThreadQ
     {
+        private static int i;
+
         public void execute()
         {
             Person p = new Person(1, "刘备");
             //启动工作者线程
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 10000; i++)
                 ThreadPool.QueueUserWorkItem(new WaitCallback(RunWorkerThread), p);
+
             Console.WriteLine("线程放置完成，立即执行！");
         }
 

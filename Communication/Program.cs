@@ -6,9 +6,9 @@ namespace Communication
     {
         private static void Main(string[] args)
         {
-            string s = HttpAssist.Get("http://220.181.38.150");
-            Console.WriteLine(s);
-            Console.ReadLine();
+            string s = HttpAssist.Get("http://localhost:6699");
+            Console.Write(s);
+            Console.ReadKey();
         }
     }
 }
