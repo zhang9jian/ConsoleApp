@@ -9,9 +9,9 @@ namespace NewFeature
 {
     internal class Generics
     {
-        public void execute()
+        public void invokeGenericArray()
         {
-            MyGenericArray<int> intArray = new MyGenericArray<int>(5);
+            GenericArray<int> intArray = new GenericArray<int>(5);
             // 设置值
             for (int c = 0; c < 5; c++)
             {
@@ -24,7 +24,7 @@ namespace NewFeature
             }
             Console.WriteLine();
             // 声明一个字符数组
-            MyGenericArray<char> charArray = new MyGenericArray<char>(5);
+            GenericArray<char> charArray = new GenericArray<char>(5);
             // 设置值
             for (int c = 0; c < 5; c++)
             {
@@ -39,14 +39,41 @@ namespace NewFeature
             Console.WriteLine();
             Console.ReadKey();
         }
+
+        public void invokeGenericsMethod()
+        {
+            int a, b;
+            char c, d;
+            a = 10;
+            b = 20;
+            c = 'I';
+            d = 'V';
+
+            // 在交换之前显示值
+            Console.WriteLine("Int values before calling swap:");
+            Console.WriteLine("a = {0}, b = {1}", a, b);
+            Console.WriteLine("Char values before calling swap:");
+            Console.WriteLine("c = {0}, d = {1}", c, d);
+
+            // 调用 swap
+            GenericsMethod.Swap<int>(ref a, ref b);
+            GenericsMethod.Swap<char>(ref c, ref d);
+
+            // 在交换之后显示值
+            Console.WriteLine("Int values after calling swap:");
+            Console.WriteLine("a = {0}, b = {1}", a, b);
+            Console.WriteLine("Char values after calling swap:");
+            Console.WriteLine("c = {0}, d = {1}", c, d);
+            Console.ReadKey();
+        }
     }
 
     //泛型类：允许您延迟编写类或方法中的数据类型
-    public class MyGenericArray<T>
+    public class GenericArray<T>
     {
         private T[] array;
 
-        public MyGenericArray(int size)
+        public GenericArray(int size)
         {
             array = new T[size + 1];
         }
@@ -59,6 +86,17 @@ namespace NewFeature
         public void setItem(int index, T value)
         {
             array[index] = value;
+        }
+    }
+
+    public class GenericsMethod
+    {
+        public static void Swap<T2>(ref T2 lhs, ref T2 rhs)
+        {
+            T2 temp;
+            temp = lhs;
+            lhs = rhs;
+            rhs = temp;
         }
     }
 }
