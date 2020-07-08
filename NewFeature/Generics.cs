@@ -66,6 +66,19 @@ namespace NewFeature
             Console.WriteLine("c = {0}, d = {1}", c, d);
             Console.ReadKey();
         }
+
+        public void invokeGenericsDelegate()
+        {
+            //通过泛型使用委托。将委托泛型化来代替一类方法
+            NumberChanger<int> nc1 = new NumberChanger<int>(CommonDelegate.AddNum);
+            NumberChanger<int> nc2 = new NumberChanger<int>(CommonDelegate.MultNum);
+            // 使用委托对象调用方法
+            nc1(25);
+            Console.WriteLine("Value of Num: {0}", CommonDelegate.getNum());
+            nc2(5);
+            Console.WriteLine("Value of Num: {0}", CommonDelegate.getNum());
+            Console.ReadKey();
+        }
     }
 
     //泛型类：允许您延迟编写类或方法中的数据类型
@@ -97,6 +110,30 @@ namespace NewFeature
             temp = lhs;
             lhs = rhs;
             rhs = temp;
+        }
+    }
+
+    internal delegate T NumberChanger<T>(T n);
+
+    public class CommonDelegate
+    {
+        private static int num = 10;
+
+        public static int AddNum(int p)
+        {
+            num += p;
+            return num;
+        }
+
+        public static int MultNum(int q)
+        {
+            num *= q;
+            return num;
+        }
+
+        public static int getNum()
+        {
+            return num;
         }
     }
 }
