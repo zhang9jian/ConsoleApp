@@ -11,7 +11,7 @@ namespace Delegate
         //定义方法
         public static void Book(string str)
         {
-            Console.WriteLine(str);
+            Console.WriteLine(str + "test");
         }
 
         //定义同方法签名的委托
