@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnonymousObject.cs" />
     <Compile Include="ExtendMethod.cs" />
     <Compile Include="Generics.cs" />
     <Compile Include="GenericsWhere.cs" />
