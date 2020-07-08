@@ -11,9 +11,6 @@ namespace DataStruct
     {
         private static void Main(string[] args)
         {
-            ExtendMethod.execute();
-
-            Console.ReadKey();
         }
     }
 }

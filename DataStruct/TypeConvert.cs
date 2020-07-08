@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataTypeConvert
+namespace DataStruct
 {
-    internal class Program
+    internal class TypeConvert
     {
-        private static void Main(string[] args)
+        public void execute()
         {
             byte[] Test_byte = new byte[] { 0, 1, 2, 3 };
             byte[] Temp_byte;
