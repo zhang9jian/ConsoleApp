@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnonymousObject.cs" />
+    <Compile Include="Default.cs" />
     <Compile Include="ExtendMethod.cs" />
     <Compile Include="Generics.cs" />
     <Compile Include="GenericsWhere.cs" />
