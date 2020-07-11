@@ -14,6 +14,7 @@ namespace NewFeature
         private int i = default;
         private DateTime? dt = default;
         private dynamic d = default;
+        private int i;
 
         //表达式默认值
         public string A => default;
